@@ -56,6 +56,25 @@ p {
   margin: 1em 0;
 }
 
+ol, ul {
+  list-style: none;
+  font-weight: 500;
+}
+
+table {
+  text-align: center;
+  border: 2px solid;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+td {
+  border: 1px solid;
+  padding: 4px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
 footer {
   position: fixed;
   width: 100%;
