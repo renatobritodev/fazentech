@@ -17,14 +17,17 @@ body {
 
 header {
   height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-  background-image: url("../assets/img/cafe.png");
+  /* background-image: url("../assets/img/cafe.png"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-nav {
+nav > ul {
   display: flex;
   justify-content: center;
   align-items: center;
