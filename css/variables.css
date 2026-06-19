@@ -1,5 +1,11 @@
 :root {
-  --blue: #0a8d71;
-  --green: #abff91;
-  --white: aliceblue;
+  --primary-color: #0a8d71;
+  --secondary-color: #abff91;
+
+  --text-color: #222;
+  --text-light: #555;
+
+  --background-color: #f8f9fa;
+
+  --transition: 0.3s ease;
 }

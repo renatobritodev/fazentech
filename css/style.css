@@ -1,19 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("./reset.css");
+@import url("./variables.css");
+@import url("./typography.css");
+@import url("./layout.css");
+@import url("./components.css");
 
-html {
-  box-sizing: inherit;
+body {
   font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 300;
-  font-style: normal;
-  height: 100vh;
-  background-color: var(--white);
+  background-color: var(--background-color);
+  color: var(--text-color);
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  text-align: center;
-  height: 4em;
+  height: 200px;
+
   background-image: url("../assets/img/cafe.png");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -21,35 +28,36 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 6em;
-  text-align: center;
+  gap: 1.5rem;
+  padding: 1rem;
 }
 
 a {
-  font-size: large;
-  font-weight: 500;
+  color: var(--text-color);
   text-decoration: none;
-  color: #333;
   text-transform: uppercase;
   letter-spacing: 1px;
+  transition: color var(--transition);
   margin: 0 10px 0 10px;
 }
 
 a:hover {
-  color: brown;
-  transition: 500ms ease-in-out;
+  color: var(--primary-color);
 }
 
 main {
-  padding: 2em 20em;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  flex: 1;
 }
 
 section {
   padding: 1em 0;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: #222;
   padding: 0.5em 0;
 }
@@ -57,33 +65,44 @@ h1, h2 {
 p {
   color: #111;
   font-weight: 400;
-  text-align: justify;
   margin: 1em 0;
+  font-size: 1rem;
+  line-height: 1.8;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
   font-weight: 500;
 }
 
 table {
-  text-align: center;
-  border: 2px solid;
-  border-radius: 2px;
   width: 100%;
+  border-collapse: collapse;
 }
 
+th,
 td {
-  border: 1px solid;
-  padding: 4px;
-  border-radius: 4px;
-  font-weight: 500;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
 }
 
-/* footer {
-  position: fixed;
-  width: 100%;
-  height: 60px;
-  bottom: 0;
+th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+footer {
   text-align: center;
-} */
+  padding: 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+}
