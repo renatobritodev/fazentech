@@ -1,120 +1,58 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>FazenTECH</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="app/style/style.css">
-	<link
-		href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,400;0,600;1,300;1,700&display=swap"
-		rel="stylesheet">
-	<title>FazenTECH</title>
-
-	<style>
-		body {
-			background-image: url("app/img/verduras-legumes.jpg");
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
-
-		section {
-			width: 800px;
-			background-color: rgba(255, 255, 255, .7);
-			margin: 50px auto;
-			border-radius: 10px;
-			border: 7px ridge var(--greenFarm);
-		}
-
-		section,
-		article {
-			text-align: justify;
-		}
-
-		h1 {
-			text-align: center;
-			margin-top: 30px;
-			color: var(--white);
-			font-size: 2.5rem;
-		}
-
-		label {
-			letter-spacing: 1px;
-			padding-bottom: 5px;
-		}
-
-		input, textarea {
-			width: 100%;
-			padding: 3px;
-			border-radius: 5px;
-			outline: none;
-		}
-
-		p, button {
-			margin: 0 auto;
-			padding: 5px;
-			border-radius: 5px;
-			outline: none;
-			text-align: center;
-		}
-
-		button {
-			background-color: var(--greenFarm);
-			color: var(--blueFarm);
-			font-size: large;
-		}
-	</style>
-</head>
-
-<body>
-	<nav>
-		<a href="index.html">
-			<p><span class="farm">Fazen</span><span class="tech">TECH</span></p>
-		</a>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="">Sobre&darr;</a>
-				<ul>
-					<li><a href="about.html">Nossa Fazenda</a></li>
-					<li><a href="products.html">Nossos Produtos</a></li>
-					<li><a href="animals.html">Nossos Animais</a></li>
-				</ul>
-			</li>
-			<li><a href="employees.html">Área Restrita</a></li>
-			<li><a href="contact.html">Contato</a></li>
-		</ul>
-	</nav>
-
-	<section>
-		<article>
-			<h1><span class="farm">Fale</span><span class="tech">Conosco</span></h1>
-			<form action="register.php" method="POST" class="form-example">
-				<p>
-					<label for="name">Nome</label>
-					<input type="text" name="name" id="name" required>
-				</p>
-				<p>
-					<label for="email">E-mail</label>
-					<input type="email" name="email" id="email" required>
-				</p>
-				<p>
-					<label for="story">Deixe um comentário</label>
-					<textarea id="story" name="story" rows="4" cols="30"></textarea>
-				</p>
-				<p>
-					<button>Enviar</button>
-				</p>
-			</form>
-		</article>
-	</section>
-
-
-	<footer>
-		<p>
-			&copy; <a href="index.html"><span class="farm">Fazen</span><span class="tech">TECH</span></a> - Todos os direitos
-			reservados | Developed by: <a href="https://renatoobrito.github.io" target="_blank"><span
-					class="farm">Renato</span><span class="tech">Brito</span></a>
-		</p>
-	</footer>
-</body>
-
+  <body>
+    <header></header>
+    <nav>
+      <a href="/index.html">home</a>
+      <a href="/about.html">sobre</a>
+      <a href="/products.html">produtos</a>
+      <a href="/animals.html">animais</a>
+      <a href="/contact.html">contato</a>
+      <a href="/login.html">area restrita</a>
+    </nav>
+    <main>
+      <h1>Fale conosco</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <hr />
+      <form action="/" method="post">
+        <fieldset>
+          <legend><strong>Dados de contato</strong></legend>
+          <label for="name">Nome:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="João"
+            required
+          /><br />
+          <label for="email">E-email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="exemplo@exemplo.com"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <legend><strong>Mensagem:</strong></legend>
+          <textarea name="msg" id="msg"></textarea>
+        </fieldset>
+        <fieldset>
+          <button type="submit">Enviar mensagem</button>
+          <button type="reset">Limpar o formulário</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2026 FazenTECH. Todos os direitos reservados.</p>
+    </footer>
+  </body>
 </html>

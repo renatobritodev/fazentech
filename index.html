@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/variables.css" />
     <title>FazenTECH</title>
   </head>
 
   <body>
     <header></header>
     <nav>
-      <a href="#">about</a>
-      <a href="#">services</a>
-      <a href="#">contato</a>
+      <a href="/about.html">sobre</a>
+      <a href="/products.html">produtos</a>
+      <a href="/animals.html">animais</a>
+      <a href="/contact.html">contato</a>
+      <a href="/login.html">area restrita</a>
     </nav>
     <main>
       <section>
@@ -45,78 +45,9 @@
           <li>Produto não ordenado 3</li>
         </ul>
       </section>
-      <hr />
-      <section>
-        <h2>Conheça nossa linha de produtos vegano</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Itens</th>
-              <th>Qtde.</th>
-              <th>Total</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Registro 01</td>
-              <td>3</td>
-              <td>R$30</td>
-            </tr>
-            <tr>
-              <td>Registro 02</td>
-              <td>2</td>
-              <td>R$30</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <th>Total</th>
-              <th>R$60</th>
-            </tr>
-          </tfoot>
-        </table>
-      </section>
-      <section>
-
-        <form action="/pagina-processa-dados-form" method="post">
-          <fieldset>
-            <legend>Dados Gerais</legend>
-            <label for="nome">Nome:</label>
-            <input type="text" minlength="3" id="nome" />
-            <label for="data_nascimento">Data de Nascimento</label>
-            <input type="text" id="data_nascimento" />
-            <label for="cpf">CPF:</label>
-            <input type="text" minlength="11" id="cpf" />
-          </fieldset>
-          <fieldset>
-            <legend>Endereço</legend>
-            <label for="tipo_endereco">Tipo:</label>
-            <select name="tipo_endereco" id="tipo_endereco">
-              <option value="">Rua</option>
-              <option value="">Estrada</option>
-              <option value="">Rodovia</option>
-              <option value="">Outros</option>
-            </select>
-            <label for="logradouro_endereco">Logradouro</label>
-            <input type="text" id="logradouro_endereco" />
-            <label for="numero_endereco">Número:</label>
-            <input type="text" id="numero_endereco" />
-            <label for="complemento">Complemento:</label>
-            <input type="text" id="complemento" />
-          </fieldset>
-          <fieldset>
-            <legend>Fale Conosco</legend>
-            <label for="msg">Mensagem:</label>
-            <textarea name="msg" id="msg"></textarea>
-          </fieldset>
-          <fieldset>
-            <button type="submit">Enviar mensagem</button>
-            <button type="reset">Limpar o formulário</button>
-          </fieldset>
-        </form>
-
-      </section>
     </main>
-    <footer>Rodapé</footer>
+    <footer>
+      <p>&copy; 2026 FazenTech. Todos os direitos reservados.</p>
+    </footer>
   </body>
 </html>
