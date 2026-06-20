@@ -1,11 +1,23 @@
 :root {
-  --primary-color: #0a8d71;
-  --secondary-color: #abff91;
+  /* Brand */
+  --primary-color: #0A8D71;
+  --secondary-color: #0047B3;
 
-  --text-color: #222;
-  --text-light: #555;
+  /* Nature */
+  --green-light: #7CCB3A;
+  --green-dark: #1E5F3A;
 
-  --background-color: #f8f9fa;
+  /* Accent */
+  --accent-color: #FFD000;
 
+  /* Text */
+  --text-color: #2A2A2A;
+  --text-light: #555555;
+
+  /* Background */
+  --background-color: #F8FAFC;
+  --surface-color: #FFFFFF;
+
+  /* Effects */
   --transition: 0.3s ease;
 }
