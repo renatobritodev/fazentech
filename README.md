@@ -1,6 +1,6 @@
 # FazenTECH
-Repositório dedicado ao 3º PTG do Curso de Análise e Desenvolvimento de Sistemas.
-
+Fictional institutional page about a farm that produces natural food free of pesticides on a large scale.
+<!-- 
 ## Home
 ![](https://github.com/renatoobrito/FazenTECH/blob/main/app/background/home.png)
 Nossa home começa com o artigo do mês, uma forma de entreter e informar nossos visitantes.
@@ -24,3 +24,4 @@ Este espaço é dedicado aos nossos colaboradores.
 ## Contato
 ![](https://github.com/renatoobrito/FazenTECH/blob/main/app/background/contact.png)
 Pra falar com a gente preencha este pequeno formulário e aguarde nosso retorno.
+-->
